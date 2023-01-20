@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:safalta/register.dart';
 import 'package:safalta/splash_screen.dart';
+
+import 'login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +30,11 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashScreen(),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
+
+      routes: {
+        'register': (context) => MyRegister(),
+        'login': (context) => MyLogin(),
+      },
     );
   }
 }

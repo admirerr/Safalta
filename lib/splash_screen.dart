@@ -3,7 +3,8 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:safalta/dashboard.dart';
+//import 'package:safalta/dashboard.dart';
+import 'package:safalta/login.dart';
 
 class SplashScreen extends StatefulWidget{
   @override
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(Duration(seconds: 2), () {
 
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => dashboard() ));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyLogin() ));
 
 
       //Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => dashboard(),
