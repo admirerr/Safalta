@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:safalta/register.dart';
 import 'package:safalta/splash_screen.dart';
-
+import 'NavBar.dart';
 import 'login.dart';
 
 void main() {
@@ -123,6 +123,10 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+
+      //Navbar
+        drawer: NavBar(), 
+        
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
